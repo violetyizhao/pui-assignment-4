@@ -241,7 +241,10 @@ $(document).ready(function () {
 
     }
 
-    var selectedSize = $("#size-options option:selected").text();
+    var selectedSize = "S";
+    $("#size-options").change(function () {
+        selectedSize=$("#size-options option:selected").text();
+    })
     var selectedQuant;
     selectedQuant = $("#quantity-options option:selected").val();
     $("#quantity-options").change(function () {
@@ -256,9 +259,9 @@ $(document).ready(function () {
         var sizeOfProduct = selectedSize;
         var quantOfProduct = selectedQuant;
         addToCart(imgOfProduct, nameOfProduct, priceOfProduct, sizeOfProduct, quantOfProduct);
-        console.log(quantOfProduct);
-        console.log(localStorage.getItem("cart"));
-        console.log(JSON.parse(localStorage.getItem("cart")));
+        console.log(selectedSize);
+        // console.log(localStorage.getItem("cart"));
+        // console.log(JSON.parse(localStorage.getItem("cart")));
 
     })
 
