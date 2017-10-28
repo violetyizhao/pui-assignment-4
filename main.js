@@ -260,6 +260,7 @@ $(document).ready(function () {
         var quantOfProduct = selectedQuant;
         addToCart(imgOfProduct, nameOfProduct, priceOfProduct, sizeOfProduct, quantOfProduct);
         console.log(selectedSize);
+        location.reload();
         // console.log(localStorage.getItem("cart"));
         // console.log(JSON.parse(localStorage.getItem("cart")));
 
