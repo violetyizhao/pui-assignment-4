@@ -1,19 +1,16 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Pillow Shop</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" type="text/css" href="pillowshop.css" />
 </head>
 
 <body>
-
-    <div class="start">
+    <!-- top right personal info -->
+    <div class="without-background">
         <div id="info">
             <p7>Hi, you</p7>
-            <a href="shoppingCart.html">
-                <img id="cart-img" src="shoppingCart.png">
-            </a>
+            <img src="shoppingCartBlack.png">
         </div>
 
 
@@ -23,7 +20,7 @@
             </a>
         </div>
 
-
+        <!-- navigation bar -->
         <nav>
             <ul>
                 <li>
@@ -40,54 +37,47 @@
                 </li>
             </ul>
         </nav>
-
-
-        <div class="handmade">
-            <h1>Hand-made in Pittsburgh.</h1>
-            <div class="wrapper">
-                <a href="products.html">
-                    <button class="button" style="vertical-align:middle">
-                        <span>start here </span>
-                    </button>
-                </a>
-            </div>
-        </div>
-
     </div>
 
-    <div class="bottom">
-        <div id="custom-made">
-            <img src="photos/custom.jpg">
-            <h3>Custom
-                <br> Made</h3>
+    <!-- shopping cart -->
+    <h1 id="shopping-cart-title">Shopping Cart</h1>
+    <div class="shopping-cart-table">
+        <table id="table1">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+
+        <div class="total-checkout">
+            <table id="total-table">
+
+            </table>
         </div>
 
-        <div id="bird">
-            <img src="photos/bird.jpg">
-            <h3>Cruelty
-                <br> Free</h3>
+        <div id="checkout">
+            <button type="button">Check Out</button>
         </div>
-
-        <div id="events">
-            <img src="photos/events.jpg">
-            <h3>Events</h3>
-        </div>
-
     </div>
+
 
     <div id="address">
-        <p>300 S. Craig St.
-        </p>
+        <p>300 S. Craig St.</p>
         <p>Pittsburgh, PA</p>
     </div>
 
     <div id="copyright">
         <p>Copyright © 2017 Flip Stitch Pillow</p>
     </div>
-
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+
 <!-- link javascript -->
 <script src="main.js"></script>
 
